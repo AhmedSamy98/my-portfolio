@@ -1,0 +1,511 @@
+/* ===================================
+   CERTIFICATES SECTION STYLES
+   ===================================*/
+
+/* Certificates Section Container */
+.certificates {
+    padding: 100px 0;
+    background: var(--bg-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.certificates::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--accent-primary)03, var(--accent-secondary)03);
+    pointer-events: none;
+}
+
+.certificates-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Header */
+.certificates-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.certificates-title {
+    font-size: 3rem;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.certificates-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+    border-radius: 2px;
+}
+
+.certificates-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Certificates Categories */
+.certificates-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* Category Card */
+.certificate-category {
+    background: var(--bg-secondary);
+    border-radius: 20px;
+    padding: 40px 30px;
+    border: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.certificate-category:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.certificate-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+}
+
+.software-certs::before {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.entrepreneurship-certs::before {
+    background: linear-gradient(90deg, #f093fb, #f5576c);
+}
+
+.other-certs::before {
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+}
+
+/* Category Header */
+.category-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.category-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-size: 1.6rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.software-certs .category-icon {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.entrepreneurship-certs .category-icon {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+}
+
+.other-certs .category-icon {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.category-info h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 5px 0;
+}
+
+.category-count {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* Certificates Grid */
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.certificate-item {
+    background: var(--bg-tertiary);
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.certificate-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent-primary);
+}
+
+.certificate-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--accent-primary);
+    transition: width 0.3s ease;
+}
+
+.certificate-item:hover::before {
+    width: 100%;
+}
+
+/* Certificate Image */
+.certificate-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.certificate-item:hover .certificate-image {
+    transform: scale(1.05);
+}
+
+/* Certificate Info */
+.certificate-info h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 8px 0;
+    line-height: 1.3;
+}
+
+.certificate-issuer {
+    font-size: 0.9rem;
+    color: var(--accent-primary);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.certificate-date {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+}
+
+/* Certificate Actions */
+.certificate-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.cert-btn {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.view-btn {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: white;
+}
+
+.view-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.verify-btn {
+    background: transparent;
+    color: var(--accent-primary);
+    border: 1px solid var(--accent-primary);
+}
+
+.verify-btn:hover {
+    background: var(--accent-primary);
+    color: white;
+}
+
+.verify-btn.full-width {
+    width: 100%;
+}
+
+/* Certificate Stats */
+.certificate-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+    padding-top: 60px;
+    border-top: 1px solid var(--border-color);
+}
+
+.stat-item {
+    text-align: center;
+    padding: 30px 20px;
+    background: var(--bg-secondary);
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.stat-description {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-top: 5px;
+}
+
+/* Certificate Modal */
+.certificate-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.certificate-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.certificate-modal.loading .modal-image {
+    opacity: 0;
+}
+
+.certificate-modal.loading .modal-loader {
+    display: flex;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    position: relative;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.certificate-modal.loading .modal-image {
+    opacity: 0;
+}
+
+.certificate-modal.loading .modal-loader {
+    display: flex;
+}
+
+.modal-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.loader-spinner {
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--accent-primary);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.modal-close {
+    position: absolute;
+    top: -40px;
+    right: -10px;
+    background: var(--accent-primary);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+    background: var(--accent-secondary);
+    transform: rotate(90deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .certificates {
+        padding: 60px 0;
+    }
+
+    .certificates-title {
+        font-size: 2.2rem;
+    }
+
+    .certificates-categories {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .certificate-category {
+        padding: 30px 20px;
+    }
+
+    .certificates-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .certificate-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .certificates-container {
+        padding: 0 15px;
+    }
+
+    .certificates-title {
+        font-size: 1.8rem;
+    }
+
+    .certificate-category {
+        padding: 25px 15px;
+    }
+
+    .category-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .category-icon {
+        margin: 0;
+    }
+
+    .certificate-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-item {
+        padding: 20px 15px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+
+/* Dark Theme Enhancements */
+[data-theme="dark"] .certificate-category {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .certificate-category:hover {
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .certificate-item {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .certificate-item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .stat-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .stat-item:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .certificate-modal {
+    background: rgba(0, 0, 0, 0.9);
+}
