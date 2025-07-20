@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ahmed Samy Zaky - Flutter Developer Portfolio. Mobile engineer with 3+ years of experience in Flutter, Dart, Firebase, and modern mobile architectures.">
+    <meta name="keywords" content="Flutter Developer, Mobile App Developer, Dart, Firebase, Clean Architecture, MVVM, Ahmed Samy Zaky">
+    <meta name="author" content="Ahmed Samy Zaky">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Ahmed Samy Zaky - Flutter Developer Portfolio">
+    <meta property="og:description" content="Mobile engineer with 3+ years of experience in Flutter, Dart, Firebase, and modern mobile architectures.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ahmedsamy98.github.io">
+    <meta property="og:image" content="./assets/Personal_Photo/Ahmed_Samy1.jpg">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ahmed Samy Zaky - Flutter Developer Portfolio">
+    <meta name="twitter:description" content="Mobile engineer with 3+ years of experience in Flutter, Dart, Firebase, and modern mobile architectures.">
+    <meta name="twitter:image" content="./assets/Personal_Photo/Ahmed_Samy1.jpg">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/experience.css">
+    <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/skills.css">
+    <link rel="stylesheet" href="./css/certificates.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <title>Ahmed Samy Zaky - Flutter Developer Portfolio</title>
+</head>
+<body>    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <!-- Starfield Background -->
+        <div class="starfield">
+            <div class="stars-layer stars-small"></div>
+            <div class="stars-layer stars-medium"></div>
+            <div class="stars-layer stars-large"></div>
+        </div>
+        <!-- Floating Code Elements -->
+        <div class="floating-code">
+            <div class="code-snippet snippet-1">&lt;/&gt;</div>
+            <div class="code-snippet snippet-2">{}</div>
+            <div class="code-snippet snippet-3">class</div>
+            <div class="code-snippet snippet-4">function()</div>
+            <div class="code-snippet snippet-5">import</div>
+            <div class="code-snippet snippet-6">await</div>
+        </div>
+        <!-- Main Loader -->
+        <div class="space-loader">
+            <!-- Central Logo/Icon -->
+            <div class="loader-center">
+                <div class="planet-core">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="orbit orbit-1">
+                    <div class="satellite satellite-1">
+                        <i class="fab fa-flutter"></i>
+                    </div>
+                </div>
+                <div class="orbit orbit-2">
+                    <div class="satellite satellite-2">
+                        <i class="fab fa-dart-lang"></i>
+                    </div>
+                </div>
+                <div class="orbit orbit-3">
+                    <div class="satellite satellite-3">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Loading Text -->
+            <div class="loading-text-container">
+                <h2 class="loading-title">Initializing Universe...</h2>
+                <div class="loading-progress">
+                    <div class="progress-bar"></div>
+                </div>
+                <p class="loading-subtitle">Preparing stellar code experience</p>
+            </div>
+        </div>
+        <!-- Particle Effects -->
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo -->
+            <a href="#home" class="logo">
+                <div class="logo-icon">AS</div>
+                <div class="logo-content">
+                    <div class="logo-text">Ahmed Samy</div>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav" aria-label="Main navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active" data-translate="nav_home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" data-translate="nav_about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link" data-translate="nav_experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link" data-translate="nav_projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link" data-translate="nav_skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#certificates" class="nav-link" data-translate="nav_certificates">Certificates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-translate="nav_contact">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Language Switcher -->
+                <div class="language-switcher">
+                    <button type="button" class="language-current">
+                        <span class="language-flag flag-us"></span>
+                        <span class="language-text">English</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-dropdown">
+                        <!-- Options will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Theme Toggle -->
+                <button type="button" class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle-slider">🌙</span>
+                </button>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button type="button" class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+            <ul class="mobile-nav-menu">
+                <li><a href="#home" class="mobile-nav-link" data-translate="nav_home">Home</a></li>
+                <li><a href="#about" class="mobile-nav-link" data-translate="nav_about">About</a></li>
+                <li><a href="#experience" class="mobile-nav-link" data-translate="nav_experience">Experience</a></li>
+                <li><a href="#projects" class="mobile-nav-link" data-translate="nav_projects">Projects</a></li>
+                <li><a href="#skills" class="mobile-nav-link" data-translate="nav_skills">Skills</a></li>
+                <li><a href="#certificates" class="mobile-nav-link" data-translate="nav_certificates">Certificates</a></li>
+                <li><a href="#contact" class="mobile-nav-link" data-translate="nav_contact">Contact</a></li>
+            </ul>
+            <div class="mobile-controls">
+                <div class="language-switcher mobile">
+                    <button type="button" class="language-current">
+                        <span class="language-flag flag-us"></span>
+                        <span class="language-text">English</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-dropdown">
+                        <!-- Options will be populated by JavaScript -->
+                    </div>
+                </div>
+                <button type="button" class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle-slider">🌙</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <!-- Space War Background -->
+            <div class="space-war-background">
+                <!-- Starfield -->
+                <div class="hero-starfield">
+                    <div class="hero-stars-layer hero-stars-small"></div>
+                    <div class="hero-stars-layer hero-stars-medium"></div>
+                    <div class="hero-stars-layer hero-stars-large"></div>
+                </div>
+                <!-- Code Terms Background -->
+                <div class="code-terms-background">
+                    <!-- Code terms will be populated by JavaScript -->
+                </div>
+                <!-- Spaceship -->
+                <div class="spaceship">
+                    <div class="spaceship-body">
+                        <div class="spaceship-core">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="spaceship-wings">
+                            <div class="wing wing-left"></div>
+                            <div class="wing wing-right"></div>
+                        </div>
+                        <div class="spaceship-engines">
+                            <div class="engine engine-1"></div>
+                            <div class="engine engine-2"></div>
+                            <div class="engine engine-3"></div>
+                        </div>
+                    </div>                    <!-- Laser beams -->
+                    <div class="laser-container">
+                        <div class="laser laser-1"></div>
+                        <div class="laser laser-2"></div>
+                        <div class="laser laser-3"></div>
+                        <div class="laser laser-4"></div>
+                        <div class="laser laser-5"></div>
+                    </div>
+                </div>
+                <!-- Asteroids (Tech logos) -->
+                <div class="asteroids-container">
+                    <!-- Asteroids will be populated by JavaScript -->
+                </div>
+                <!-- Explosion effects -->
+                <div class="explosions-container">
+                    <!-- Explosions will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="hero-container">
+                    <!-- Hero Content -->
+                    <div class="hero-content">
+                        <p class="hero-greeting" data-translate="hero_greeting">Welcome, I'm</p>
+                        <h1 class="hero-title" data-translate="hero_name">Ahmed Samy Zaky</h1>
+                        <h2 class="hero-subtitle" data-translate="hero_title">Flutter Developer</h2>                        <p class="hero-description" data-translate="hero_subtitle">
+                            Mobile engineer with 3+ years of experience designing, building and shipping
+                            production-grade Flutter applications. Expert in Dart, Firebase, and modern
+                            architecture patterns.
+                        </p>
+                        <!-- Action Buttons -->
+                        <div class="hero-buttons">
+                            <!-- CV Button -->
+                            <button type="button" class="cv-modal-button" id="cvModalButton">
+                                <i class="fas fa-file-pdf"></i>
+                                <span data-translate="hero_cv_button">View CV</span>
+                            </button>
+
+                            <button type="button" class="contact-modal-button" id="contactModalButton">
+                                <i class="fas fa-envelope"></i>
+                                <span data-translate="hero_contact_button">Contact Me</span>
+                            </button>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="social-links">
+                            <a href="https://github.com/AhmedSamy98" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/ahmed-samy98" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:ahmed1samy1998@gmail.com" class="social-link" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Hero Image -->
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <!-- Profile images will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>            <!-- Theme Toggle for Hero -->
+            <button type="button" class="theme-toggle-hero" aria-label="Toggle theme">
+                <span class="theme-slider">🌙</span>
+            </button>
+        </section>        <!-- About Section -->
+        <section id="about" class="section about animate-on-scroll">
+            <!-- Background -->
+            <div class="about-tech-bg">
+                <!-- Tech icons will be populated by JavaScript -->
+            </div>
+
+            <div class="container">
+                <h2 class="section-title" data-translate="about.title">About Me</h2>
+                <div class="about-container">
+                    <!-- About Content -->
+                    <div class="about-content">
+                        <p class="about-text" data-translate="about.description">
+                            <i class="fas fa-mobile-alt about-icon"></i> Mobile engineer with <span class="highlight">3+ years of experience</span> designing, building and shipping
+                            production-grade Flutter applications. Expert in <span class="highlight">Dart 3 💙, Flutter 3.x 🚀, Firebase 🔥</span>
+                            (Auth, Firestore, Storage) and modern, modular architectures - <span class="highlight">Clean Architecture 🏛️</span>
+                            with feature-based layers, <span class="highlight">MVVM and Cubit state-management 📊</span> - that keep code
+                            scalable and test-ready.
+                        </p><p class="about-text" data-translate="about.description_2">
+                            <i class="fas fa-code-branch about-icon"></i> End-to-end skills span requirement analysis, <span class="highlight">pixel-perfect UI/UX ✨</span>, <span class="highlight">REST-ful API integration 🔄</span>,
+                            <span class="highlight">CI/CD pipelines on GitHub Actions 🔄</span>, <span class="highlight">automated Play-Console releases 🚀</span>
+                            and <span class="highlight">performance profiling 📈</span>. Proven ability to publish polished apps to Google Play and maintain
+                            their lifecycle.
+                        </p>
+
+                        <!-- Statistics Grid -->
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <i class="stat-icon fas fa-calendar-alt"></i>
+                                <span class="stat-number" data-target="3">3+</span>
+                                <span class="stat-label" data-translate="about.stats.experience">Years Experience</span>
+                            </div>
+                            <div class="stat-card">
+                                <i class="stat-icon fas fa-project-diagram"></i>
+                                <span class="stat-number" data-target="20">20+</span>
+                                <span class="stat-label" data-translate="about.stats.projects">Projects</span>
+                            </div>                            <div class="stat-card">
+                                <i class="stat-icon fas fa-certificate"></i>
+                                <span class="stat-number" data-target="10">10+</span>
+                                <span class="stat-label" data-translate="about.stats.certificates">Certificates</span>
+                            </div>
+                        </div>
+                        <!-- Skills section has been removed and merged into Core Competencies -->
+                        <!-- Action buttons removed as they're already in the hero section -->
+                    </div>
+                    <!-- Core Competencies -->
+                    <div class="competencies">
+                        <h3 class="competencies-title" data-translate="about.competencies.title">Core Competencies</h3>
+                        <div class="competencies-list">
+                            <div class="competency-item">
+                                <div class="competency-header">
+                                    <div class="competency-icon">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <span class="competency-name" data-translate="about.competencies.flutter">Flutter Development</span>
+                                    <!-- <span class="competency-level">95%</span> -->
+                                </div>
+                                <p class="competency-description" data-translate="about.competencies.flutter_desc">
+                                    Expert in building cross-platform mobile applications with pixel-perfect UI/UX
+                                </p>
+                            </div>
+                            <div class="competency-item">
+                                <div class="competency-header">
+                                    <div class="competency-icon">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <span class="competency-name" data-translate="about.competencies.dart">Dart Programming</span>
+                                    <!-- <span class="competency-level">90%</span> -->
+                                </div>
+                                <p class="competency-description" data-translate="about.competencies.dart_desc">
+                                    Advanced proficiency in Dart language with modern programming patterns
+                                </p>
+                            </div>
+                            <div class="competency-item">
+                                <div class="competency-header">
+                                    <div class="competency-icon">
+                                        <i class="fas fa-sitemap"></i>
+                                    </div>
+                                    <span class="competency-name" data-translate="about.competencies.architecture">Clean Architecture</span>
+                                    <!-- <span class="competency-level">88%</span> -->
+                                </div>
+                                <p class="competency-description" data-translate="about.competencies.architecture_desc">
+                                    Clean Architecture, MVVM, and modular design patterns for scalable code
+                                </p>
+                            </div>
+                            <div class="competency-item">
+                                <div class="competency-header">
+                                    <div class="competency-icon">
+                                        <i class="fab fa-google"></i>
+                                    </div>
+                                    <span class="competency-name" data-translate="about.competencies.firebase">Firebase Integration</span>
+                                    <!-- <span class="competency-level">85%</span> -->
+                                </div>
+                                <p class="competency-description" data-translate="about.competencies.firebase_desc">
+                                    Auth, Firestore, Storage, and real-time features implementation
+                                </p>
+                            </div>
+                            <div class="competency-item">
+                                <div class="competency-header">
+                                    <div class="competency-icon">
+                                        <i class="fas fa-cogs"></i>
+                                    </div>
+                                    <span class="competency-name" data-translate="about.competencies.cicd">CI/CD Pipelines</span>
+                                    <!-- <span class="competency-level">80%</span> -->
+                                </div>
+                                <p class="competency-description" data-translate="about.competencies.cicd_desc">
+                                    GitHub Actions and automated deployment workflows
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Experience Section -->
+        <section id="experience" class="section experience animate-on-scroll">
+            <!-- Digital Code Matrix Background -->
+            <div class="code-matrix-background">
+                <!-- Binary Rain -->
+                <div class="binary-rain">
+                    <!-- Binary columns will be populated by JavaScript -->
+                </div>
+                <!-- Floating Code Blocks -->
+                <div class="floating-code-blocks">
+                    <!-- Code blocks will be populated by JavaScript -->
+                </div>
+                <!-- Career Path Visualization -->
+                <div class="career-path">
+                    <div class="path-lines">
+                        <div class="path-line path-1"></div>
+                        <div class="path-line path-2"></div>
+                        <div class="path-line path-3"></div>
+                    </div>
+                    <div class="career-nodes">
+                        <div class="career-node node-1"></div>
+                        <div class="career-node node-2"></div>
+                        <div class="career-node node-3"></div>
+                        <div class="career-node node-4"></div>
+                    </div>
+                </div>
+                <!-- Animated Code Symbols -->
+                <div class="code-symbols">
+                    <div class="symbol symbol-1">{}</div>
+                    <div class="symbol symbol-2">[]</div>
+                    <div class="symbol symbol-3">()</div>
+                    <div class="symbol symbol-4">&lt;/&gt;</div>
+                    <div class="symbol symbol-5">=&gt;</div>
+                    <div class="symbol symbol-6">!=</div>
+                </div>
+                <!-- Git Commit Visualization -->
+                <div class="git-commits">
+                    <div class="commit-graph">
+                        <div class="commit-dot commit-1"></div>
+                        <div class="commit-dot commit-2"></div>
+                        <div class="commit-dot commit-3"></div>
+                        <div class="commit-dot commit-4"></div>
+                        <div class="commit-dot commit-5"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h2 class="section-title" data-translate="experience_title">Professional Experience</h2>
+                <p class="section-subtitle" data-translate="experience_subtitle">My career journey</p>
+                <div class="timeline">
+                    <!-- Experience items will be populated here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title" data-translate="projects_title">Featured Projects</h2>
+                <p class="section-subtitle" data-translate="projects_subtitle">Some of my notable work</p>
+                <div class="projects-grid">
+                    <!-- Project items will be populated here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills animate-on-scroll">
+            <div class="skills-container">
+                <div class="skills-header">
+                    <h2 class="skills-title" data-translate="skills_title">My Skills</h2>
+                    <p class="skills-subtitle" data-translate="skills_subtitle">Technologies and tools I master</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category tech-skills" id="tech-skills">
+                        <!-- Technical skills will be populated here -->
+                    </div>
+                    <div class="skill-category soft-skills" id="soft-skills">
+                        <!-- Soft skills will be populated here -->
+                    </div>
+                    <div class="skill-category tools-skills" id="tools-skills">
+                        <!-- Tools skills will be populated here -->
+                    </div>
+                    <!-- <div class="skill-category design-skills" id="design-skills"> -->
+                        <!-- Design skills will be populated here -->
+                    <!-- </div> -->
+                </div>
+
+                <div class="core-competencies">
+                    <h3 class="competencies-title" data-translate="competencies_title">Core Competencies</h3>
+                    <div class="competencies-grid">
+                        <!-- Competencies will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Certificates Section -->
+        <section id="certificates" class="section certificates animate-on-scroll">
+            <div class="certificates-container">
+                <div class="certificates-header">
+                    <h2 class="certificates-title" data-translate="certificates_title">My Certificates</h2>
+                    <p class="certificates-subtitle" data-translate="certificates_subtitle">Certificates and courses I have completed</p>
+                </div>
+                <div class="certificates-categories">
+                    <div class="certificate-category software-certs" id="software-certs">
+                        <!-- Software certificates will be populated here -->
+                    </div>
+                    <div class="certificate-category entrepreneurship-certs" id="entrepreneurship-certs">
+                        <!-- Entrepreneurship certificates will be populated here -->
+                    </div>
+                    <div class="certificate-category other-certs" id="other-certs">
+                        <!-- Other certificates will be populated here -->
+                    </div>
+                </div>
+                <!-- Certificate stats removed as requested -->
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="section contact animate-on-scroll">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h2 class="contact-title" data-translate="contact_title">Contact Me</h2>
+                    <p class="contact-subtitle" data-translate="contact_subtitle">Let's talk about your next project</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 class="contact-info-title" data-translate="contact_info_title">Contact Information</h3>
+                        <p class="contact-info-text" data-translate="contact_info_text">Feel free to reach out to me to discuss your projects or any inquiries</p>
+                        <ul class="contact-items">
+                            <li class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">                                    <h4 data-translate="contact_email">Email</h4>
+                                    <p><a href="mailto:ahmed1samy1998@gmail.com" data-copy="email">ahmed1samy1998@gmail.com</a></p>
+                                </div>
+                            </li>
+                            <li class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4 data-translate="contact_phone">Phone</h4>
+                                    <p><a href="tel:+201005538792" data-copy="phone">+20&nbsp;100&nbsp;553&nbsp;8792</a></p>
+                                </div>
+                            </li>
+                            <li class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4 data-translate="contact_location">Location</h4>
+                                    <p>Cairo, Egypt</p>
+                                </div>
+                            </li>
+                            <li class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-details">                                    <h4 data-translate="contact_availability">Availability</h4>
+                                    <p>Available for freelance projects or full/part-time remote work</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="social-links">
+                            <h4 class="social-links-title" data-translate="social_title">Follow Me On</h4>
+                            <div class="social-icons">                                <a href="https://www.linkedin.com/in/ahmed-samy98" class="social-icon linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/AhmedSamy98" class="social-icon github" target="_blank" rel="noopener" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://x.com/AhmedSamy_98" class="social-icon twitter" target="_blank" rel="noopener" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="http://t.me/AhmedSamy_98" class="social-icon telegram" target="_blank" rel="noopener" aria-label="Telegram">
+                                    <i class="fab fa-telegram-plane"></i>
+                                </a>
+                                <a href="https://wa.me/201005538792" class="social-icon whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3 data-translate="footer_about_title">Ahmed Samy Zaky</h3>
+                    <p data-translate="footer_about_description">Flutter developer specialized in creating innovative and efficient mobile applications</p>
+                    <div class="footer-social">                        <a href="https://www.linkedin.com/in/ahmed-samy98" class="footer-social-link linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/AhmedSamy98" class="footer-social-link github" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://x.com/AhmedSamy_98" class="footer-social-link twitter" target="_blank" rel="noopener" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="http://t.me/AhmedSamy_98" class="footer-social-link telegram" target="_blank" rel="noopener" aria-label="Telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-translate="footer_links_title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-translate="nav_home">Home</a></li>
+                        <li><a href="#about" data-translate="nav_about">About</a></li>
+                        <li><a href="#projects" data-translate="nav_projects">Projects</a></li>
+                        <li><a href="#contact" data-translate="nav_contact">Contact</a></li>
+                    </ul>
+                </div>                <!-- Services section removed as requested -->                <!-- Newsletter section removed as requested -->
+            </div>            <div class="footer-bottom">
+                <div class="footer-copyright centered-copyright">
+                    <span data-translate="footer_copyright">© 2025 Ahmed Samy Zaky. All rights reserved.</span>
+                    <span data-translate="footer_made_with">Made with <span class="heart">❤️</span> in Egypt</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- CV Modal -->
+    <div class="modal-overlay" id="cvModal">
+        <div class="modal-content cv-modal">
+            <div class="modal-header">
+                <h3 class="modal-title">
+                    <i class="fas fa-file-pdf"></i>
+                    <span data-translate="hero_cv_button">Download CV</span>
+                </h3>
+                <button type="button" class="modal-close" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description" data-translate="cv_modal_description">
+                    Choose your preferred language to download my CV
+                </p>
+                <div class="cv-options-grid" id="cvOptionsGrid">
+                    <!-- CV options will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-content contact-modal">
+            <div class="modal-header">
+                <h3 class="modal-title">
+                    <i class="fas fa-envelope"></i>
+                    <span data-translate="hero_contact_button">Contact Me</span>
+                </h3>
+                <button type="button" class="modal-close" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description" data-translate="contact_modal_description">
+                    Get in touch with me through any of these platforms
+                </p>
+                <div class="contact-options-grid">
+                    <a href="mailto:ahmed1samy1998@gmail.com" class="contact-option email">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                        <small>ahmed1samy1998@gmail.com</small>
+                    </a>
+                    <a href="https://linkedin.com/in/ahmed-samy98" target="_blank" rel="noopener" class="contact-option linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                        <small>Professional Network</small>
+                    </a>
+                    <a href="https://github.com/AhmedSamy98" target="_blank" rel="noopener" class="contact-option github">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                        <small>Code Repository</small>
+                    </a>
+                    <a href="https://wa.me/201005538792" target="_blank" rel="noopener" class="contact-option whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                        <small>+20 100 553 8792</small>
+                    </a>
+                    <a href="https://t.me/AhmedSamy_98" target="_blank" rel="noopener" class="contact-option telegram">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span>Telegram</span>
+                        <small>Send a message</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>    <!-- Translation Files - Load First -->
+    <script src="./js/translations/en.js"></script>
+    <script src="./js/translations/ar.js"></script>
+    <script src="./js/translations/fr.js"></script>
+    <script src="./js/translations/de.js"></script>
+    <script src="./js/translations/es.js"></script>
+    <script src="./js/translations/ja.js"></script>
+    <script src="./js/translations/ko.js"></script>
+
+    <!-- Debug script to verify translations loaded -->
+    <script>
+        console.log('🔍 Post-translation load check:');
+        console.log('English translations:', !!window.translations_en);
+        console.log('Arabic translations:', !!window.translations_ar);
+        if (window.translations_en) {
+            console.log('English experience data length:', window.translations_en.experienceData?.length || 0);
+        }
+        if (window.translations_ar) {
+            console.log('Arabic experience data length:', window.translations_ar.experienceData?.length || 0);
+        }
+    </script>
+
+    <!-- JavaScript Files -->
+    <script src="./js/main.js"></script>
+    <script src="./js/code-matrix.js"></script>
+    <script src="./js/experience.js"></script>
+    <script src="./js/projects.js"></script>
+    <script src="./js/skills.js"></script>
+    <script src="./js/certificates.js"></script>
+    <script src="./js/contact.js"></script>
+</body>
+</html>
